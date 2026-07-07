@@ -3,4 +3,6 @@ project(Excircese)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Excircese main.cpp)
+add_executable(Excircese main.cpp
+        gabbeSolution.h
+        gabbeSolutions.cpp)

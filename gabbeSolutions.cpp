@@ -1,3 +1,5 @@
+#include <string>
+
 #include "gabbeSolution.h"
 
 // Return true if number is palindrone
@@ -20,4 +22,10 @@ bool isPalindrome(int x) {
         return true;
     return false;
 
+}
+
+// Retruns integer of roman number/numbers
+int romanToInt(string s) {
+
+    return 0;
 }
