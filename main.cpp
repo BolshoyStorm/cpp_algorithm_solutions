@@ -3,7 +3,7 @@
 
 
 int main() {
-    string roamnLeter = "x";
+    string roamnLeter = "CXV";
     cout<< romanToInt(roamnLeter);
     return 0;
 }

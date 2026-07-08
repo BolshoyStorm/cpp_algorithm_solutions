@@ -26,6 +26,28 @@ bool isPalindrome(int x) {
 
 // Retruns integer of roman number/numbers
 int romanToInt(string s) {
+    int resultatNumber = 0;
+    int numArr[7]     = {1  ,5  ,10 ,50 ,100,500,1000};
+    char letterArr[7] = {'I','V','X','L','C','D','M'};
 
-    return 0;
+    for (int i = 0; i < s.size(); i++) {
+        int currentLetter = 0;
+        int nextLetter = 0;
+
+        for (int j = 0; j<7; j++) {
+            if (s[i] == letterArr[j])
+                currentLetter = numArr[j];
+        }
+        if (i+1 < s.size()) {
+            for (int k = 0; k<7; k++)
+                if (s[i+1] == letterArr[k])
+                    nextLetter = numArr[k];
+        }
+
+        if (currentLetter < nextLetter)
+            resultatNumber -= currentLetter;
+        else
+            resultatNumber += currentLetter;
+    }
+    return resultatNumber;
 }
