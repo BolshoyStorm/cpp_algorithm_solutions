@@ -1,4 +1,6 @@
-#include <string>
+
+#include <algorithm>
+#include <ranges>
 
 #include "gabbeSolution.h"
 
@@ -50,4 +52,10 @@ int romanToInt(string s) {
             resultatNumber += currentLetter;
     }
     return resultatNumber;
+}
+
+// Returns a vector containing the indices(plural of index) of two elements in nums that add up to target
+// [1,2,4,5] target = 9,    [2,3]
+vector<int> twoSum(vector<int>& nums, int target) {
+
 }

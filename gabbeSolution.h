@@ -3,6 +3,8 @@
 //
 
 #include <iostream>
+#include <string>
+#include <vector>
 using namespace std;
 
 #ifndef EXCIRCESE_GABBESOLUTION_H
