@@ -57,5 +57,15 @@ int romanToInt(string s) {
 // Returns a vector containing the indices(plural of index) of two elements in nums that add up to target
 // [1,2,4,5] target = 9,    [2,3]
 vector<int> twoSum(vector<int>& nums, int target) {
-
+    vector<int> resultVec = {};
+    for (int i = 0; i<nums.size(); i ++) {
+        for (int j = i; j > 0; j--) {
+            if (nums[i] + nums[j] == target) {
+                resultVec.push_back(j);
+                resultVec.push_back(i);
+                return resultVec;
+            }
+        }
+    }
+    return resultVec;
 }

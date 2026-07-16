@@ -12,5 +12,7 @@ using namespace std;
 
 bool isPalindrome(int x);
 int romanToInt(string s);
+vector<int> twoSum(vector<int>& nums, int target);
+void displayVector(vector<int> v);
 
 #endif //EXCIRCESE_GABBESOLUTION_H
