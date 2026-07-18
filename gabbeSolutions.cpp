@@ -69,3 +69,8 @@ vector<int> twoSum(vector<int>& nums, int target) {
     }
     return resultVec;
 }
+
+//Returns the greatest common divisor (GCD) of an array.
+int findGCD(vector<int>& nums) {
+
+}

@@ -14,5 +14,6 @@ bool isPalindrome(int x);
 int romanToInt(string s);
 vector<int> twoSum(vector<int>& nums, int target);
 void displayVector(vector<int> v);
+int findGCD(vector<int>& nums);
 
 #endif //EXCIRCESE_GABBESOLUTION_H

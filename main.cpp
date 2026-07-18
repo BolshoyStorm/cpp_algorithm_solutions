@@ -3,14 +3,12 @@
 
 
 int main() {
-    vector<int> v1 = {1,2,3,4,5};
-    vector<int> v2 = {2,4,6,8,10};
-    vector<int> v3 = {-1,-2,-3,4,1,1,1};
+    vector<int> nums = {2,5,6,9,10};
 
-    vector<int> resultVector =  twoSum(v3,2);
 
-    displayVector(resultVector);
+    int gcd = findGCD(nums);
 
+    cout<<gcd<<endl;
     return 0;
 }
 
