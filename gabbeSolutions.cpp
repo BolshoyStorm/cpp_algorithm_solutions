@@ -72,5 +72,34 @@ vector<int> twoSum(vector<int>& nums, int target) {
 
 //Returns the greatest common divisor (GCD) of an array.
 int findGCD(vector<int>& nums) {
+    int largestNum  = nums[0];
+    int smallestNum = nums[0];
 
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] > largestNum)
+            largestNum = nums[i];
+
+        if (nums[i] < smallestNum)
+            smallestNum = nums[i];
+    }
+
+    for (int j = smallestNum; j >= 1; j--) {
+        if ((largestNum % j == 0) && (smallestNum % j) == 0)
+            return j;
+    }
+    return 1;
+
+}
+
+// Checks if the array can form an arithmetic progression.
+bool canMakeArithmeticProgression(vector<int>& arr) {
+
+    sort(arr.begin(), arr.end());
+
+    int d = arr[1] - arr[0];
+    for(int i = 0; i < arr.size(); i++) {
+        if (arr[i + 1] - arr[i] != d)
+            return false;
+    }
+    return true;
 }
