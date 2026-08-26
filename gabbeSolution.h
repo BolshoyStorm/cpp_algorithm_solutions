@@ -15,5 +15,7 @@ int romanToInt(string s);
 vector<int> twoSum(vector<int>& nums, int target);
 void displayVector(vector<int> v);
 int findGCD(vector<int>& nums);
+bool canMakeArithmeticProgression(vector<int>& arr);
+int longestPalindrome(string s);
 
 #endif //EXCIRCESE_GABBESOLUTION_H

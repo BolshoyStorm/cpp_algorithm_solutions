@@ -103,3 +103,8 @@ bool canMakeArithmeticProgression(vector<int>& arr) {
     }
     return true;
 }
+
+//returns longest palindrome of a string
+int longestPalindrome(string s) {
+
+}
