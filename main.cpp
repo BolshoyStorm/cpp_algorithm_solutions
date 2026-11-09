@@ -8,10 +8,15 @@ int main() {
 
     string s1 = "abccccdd";
     string s2 = "a";
+    string s3 = "Abba";
 
     assert(longestPalindrome(s1) == 7);
     assert(longestPalindrome(s2) == 1);
+    assert(longestPalindrome(s3) == 3);
+
+    cout<<"complete"<<endl;
     return 0;
+
 }
 
 void displayVector(vector<int> v) {

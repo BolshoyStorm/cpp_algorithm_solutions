@@ -121,6 +121,8 @@ int longestPalindrome(string s) {
 
     vector<int> map(128,0);
     int resultLength = 0;
+    bool hasOdd = false;
+
 
     for (char c : s) {
         map[c]++;
@@ -130,9 +132,12 @@ int longestPalindrome(string s) {
 
         resultLength += (count/2)*2;
 
+        if (count % 2 == 1) {
+            hasOdd = true;
+        }
     }
 
-
+    if (hasOdd) resultLength++;
 
     return resultLength;
 }
