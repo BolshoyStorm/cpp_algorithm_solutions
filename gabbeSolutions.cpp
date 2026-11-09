@@ -105,6 +105,27 @@ bool canMakeArithmeticProgression(vector<int>& arr) {
 }
 
 //returns longest palindrome of a string
+
+bool checkPalindrome(string s, int begin, int end) {
+    while (begin < end) {
+        if (s[begin] != s[end]) {
+            return true;
+        }
+        begin++;
+        end--;
+    }
+    return true;
+}
+
 int longestPalindrome(string s) {
+    int resultLength = 0;
+
+    if (s.size() < 2)
+        return 1;
+
+    for (int i = 0; i<s.size(); i++) {
+
+    }
+
 
 }
