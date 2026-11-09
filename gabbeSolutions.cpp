@@ -119,20 +119,20 @@ bool checkPalindrome(string s, int begin, int end) {
 
 int longestPalindrome(string s) {
 
+    vector<int> map(128,0);
     int resultLength = 0;
 
-    if (s.empty())
-        return 0;
-
-    for (int i = 0; i<s.size(); i++) {
-        for (int begin = 0; begin < s.size(); begin++) {
-            for (int end = 0; end< s.size(); end++) {
-
-                if (checkPalindrome(s,begin,end)) {
-                    resultLength = max(resultLength, end - begin + 1);
-                }
-            }
-        }
+    for (char c : s) {
+        map[c]++;
     }
+
+    for (int count : map) {
+
+        resultLength += (count/2)*2;
+
+    }
+
+
+
     return resultLength;
 }
