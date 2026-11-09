@@ -109,7 +109,7 @@ bool canMakeArithmeticProgression(vector<int>& arr) {
 bool checkPalindrome(string s, int begin, int end) {
     while (begin < end) {
         if (s[begin] != s[end]) {
-            return true;
+            return false;
         }
         begin++;
         end--;
@@ -118,14 +118,21 @@ bool checkPalindrome(string s, int begin, int end) {
 }
 
 int longestPalindrome(string s) {
+
     int resultLength = 0;
 
-    if (s.size() < 2)
-        return 1;
+    if (s.empty())
+        return 0;
 
     for (int i = 0; i<s.size(); i++) {
+        for (int begin = 0; begin < s.size(); begin++) {
+            for (int end = 0; end< s.size(); end++) {
 
+                if (checkPalindrome(s,begin,end)) {
+                    resultLength = max(resultLength, end - begin + 1);
+                }
+            }
+        }
     }
-
-
+    return resultLength;
 }
