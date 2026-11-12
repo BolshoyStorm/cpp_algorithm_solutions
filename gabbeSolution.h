@@ -18,4 +18,5 @@ int findGCD(vector<int>& nums);
 bool canMakeArithmeticProgression(vector<int>& arr);
 int longestPalindrome(string s);
 bool checkPalindrome(string s, int begin, int end);
+bool isValid(string s);
 #endif //EXCIRCESE_GABBESOLUTION_H

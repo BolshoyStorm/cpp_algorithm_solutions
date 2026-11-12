@@ -141,3 +141,7 @@ int longestPalindrome(string s) {
 
     return resultLength;
 }
+
+bool isValid(string s) {
+    return 0;
+}
