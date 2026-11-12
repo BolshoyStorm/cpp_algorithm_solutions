@@ -143,5 +143,29 @@ int longestPalindrome(string s) {
 }
 
 bool isValidParentheses(string s) {
+    vector<char> map;
 
+    for(char c : s){
+        if(c == '(' || c == '[' || c == '{'){
+            map.push_back(c);
+        }
+
+        if (map.empty()) return false;
+
+        else if(c == ')' || c == ']' || c == '}'){
+
+            char top = map.back();
+
+            if (c == ')' && top != '(')
+                return false;
+            if (c == ']' && top != '[')
+                return false;
+            if (c == '}' && top != '{')
+                return false;
+
+            map.pop_back();
+        }
+
+    }
+    return map.empty();
 }
