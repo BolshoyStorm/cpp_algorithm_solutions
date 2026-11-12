@@ -142,6 +142,6 @@ int longestPalindrome(string s) {
     return resultLength;
 }
 
-bool isValid(string s) {
-    return 0;
+bool isValidParentheses(string s) {
+
 }
