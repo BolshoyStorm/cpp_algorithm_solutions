@@ -170,6 +170,11 @@ bool isValidParentheses(string s) {
     return map.empty();
 }
 
-int removeDuplicates(int nums[]) {
-    return 0;
+int removeDuplicates(vector<int>& nums) {
+
+    if (nums.empty()) {
+        return 0;
+    }
+
+    return o;
 }

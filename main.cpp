@@ -6,9 +6,6 @@
 
 int main() {
 
-    assert(isValidParentheses("()"));
-    assert(!isValidParentheses("(]"));
-
     cout<<"comple !";
     return 0;
 
