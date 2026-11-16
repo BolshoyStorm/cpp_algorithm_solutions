@@ -187,3 +187,7 @@ int removeDuplicates(vector<int>& nums) {
 
     return k;
 }
+
+int lengthOfLastWord(string s) {
+
+}

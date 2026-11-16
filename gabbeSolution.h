@@ -20,4 +20,5 @@ int longestPalindrome(string s);
 bool checkPalindrome(string s, int begin, int end);
 bool isValidParentheses(string s);
 int removeDuplicates(vector<int>& nums);
+int lengthOfLastWord(string s);
 #endif //EXCIRCESE_GABBESOLUTION_H
