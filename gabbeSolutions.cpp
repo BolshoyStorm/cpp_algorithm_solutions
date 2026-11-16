@@ -189,5 +189,17 @@ int removeDuplicates(vector<int>& nums) {
 }
 
 int lengthOfLastWord(string s) {
+    int currentWordLength = 0;
 
+    for (int i = s.size()-1; i >= 0; i--) {
+        if (s[i] == ' ') {
+            if (currentWordLength > 0) {
+                return currentWordLength;
+            }
+        }
+        else{
+            currentWordLength++;
+        }
+    }
+    return currentWordLength;
 }
